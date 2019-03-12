@@ -87,6 +87,17 @@ a:hover{
     color: #4B1D3F;    
 }
 
+@media screen and (max-width: 600px) {
+    #topNav a.icon {
+        float: right;
+        display: block;
+    }
+
+    #topNav li {
+        display: none;
+    }
+}
+
     /*color: inherit - HERDA AS PROPRIEDADES DO PAI;*/
 
 /* CONTEUDO */
@@ -188,8 +199,6 @@ h5{
 .contato a {    
     color: #D4F4DD;
 }
-
-
 
 img.tamanho{
     width: 40px;
