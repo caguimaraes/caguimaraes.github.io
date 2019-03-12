@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
     background-color: #D4F4DD;
     width: 100%;
     color: #4B1D3F;
@@ -72,7 +73,7 @@ nav{
 
 .nav-list-item{
     background-color: #4B1D3F;
-    width: 100%;
+    /* width: 100%; */
     display: inline;
     margin: 0 20px 0 20px;
 }
@@ -102,8 +103,7 @@ section.borda{
 
 section h3{
     color: #4B1D3F;
-    font-size: 20px;
-    width: 20%;
+    font-size: 1em;
     min-width: 340px;
     text-align: right;
     margin-right: 50px;
@@ -157,23 +157,39 @@ h5{
 
 /* RODAPÉ PRINCIPAL */
 
-footer{
+.social-media {
+    background-color: #4B1D3F;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-media div {
+    margin: 0 auto;
+}
+
+.social-media div img {
+    padding: 1rem 2rem;
+}
+
+.contato {
     background-color: #4B1D3F;
     text-align: center;
-    color: #D4F4DD;
-    width: 100%;
-    padding: 100px 0 0px 0;
 }
 
-footer a{
+.contato div {
+    margin: 0 auto;
+}
+
+.contato p {
+    margin-top: unset;
+    padding-top: unset;
+}
+
+.contato a {    
     color: #D4F4DD;
 }
 
-p.contato{
-    display: inline;
-    margin: 50px;
-    padding:0;
-}
+
 
 img.tamanho{
     width: 40px;
@@ -181,11 +197,7 @@ img.tamanho{
 
 img.cont{
     width: 15px;
-    padding-right: 5px;
-}
-
-.telefone{
-    padding-top: 50px;
+    padding-right: 0.5rem;
 }
 
 a.personal{
@@ -199,12 +211,19 @@ a.personal:hover{
 
 /*SEGUNDO RODAPÉ*/
 
-div.rodapeclaro{
-    font-size: 15px;
+footer {
     background-color: #5C244E;
-    align-content: center;
-    padding: 20px 0 20px 0;
+    margin: 0;
 }
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    color: #D4F4DD;
+}
+
+
 
 a.carola{
     font-family: 'Great Vibes', cursive;
@@ -214,9 +233,50 @@ a.carola{
     color: #D4F4DD;
 }
 
+footer a{
+    color: #D4F4DD;
+}
+
+
 a.carola:hover{
     color: #5C244E;
     
+}
+
+@media only screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    section h3 {
+        width: unset;
+        margin-right: unset;
+        text-align: center;
+    }
+
+    .section-primeira p {
+        text-align: center;
+    }
+
+    img.perfil {
+        width: 250px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .contato {        
+        display: block;
+    }
+
+    .nav-list-item {
+        display: block;
+    }
+
+    #objetivo, #resumo, #qualificacoes, #experiencia, #formacao, #cursos, #idiomas, #intercambio, #voluntario  {
+        display: block;
+    }
 }
 
 /* display flex pega filhas diretas do elemento, ao adicionar uma div dentro de outra div ele pega a primeira e não a segunda, que por padrão é block. Logo o conteudo da segunda não ficará alinhado.*/
