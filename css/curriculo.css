@@ -87,16 +87,6 @@ a:hover{
     color: #4B1D3F;    
 }
 
-@media screen and (max-width: 600px) {
-    #topNav a.icon {
-        float: right;
-        display: block;
-    }
-
-    #topNav li {
-        display: none;
-    }
-}
 
     /*color: inherit - HERDA AS PROPRIEDADES DO PAI;*/
 
@@ -268,6 +258,10 @@ a.carola:hover{
         text-align: center;
     }
 
+    section:first-child{
+        margin: unset;
+    }
+
     img.perfil {
         width: 250px;
     }
@@ -291,3 +285,15 @@ a.carola:hover{
 
 /* display flex pega filhas diretas do elemento, ao adicionar uma div dentro de outra div ele pega a primeira e não a segunda, que por padrão é block. Logo o conteudo da segunda não ficará alinhado.*/
 
+/* NAVBAR TOGGLE */
+
+@media screen and (max-width: 600px) {
+    #topNav a.icon {
+        float: right;
+        display: block;
+    }
+
+    #topNav li {
+        display: none;
+    }
+}
