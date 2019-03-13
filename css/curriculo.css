@@ -261,6 +261,7 @@ a.carola:hover{
         width: unset;
         margin-right: unset;
         text-align: center;
+        min-width: unset;
     }
 
     .section-primeira p {
